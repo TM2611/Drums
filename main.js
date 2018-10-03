@@ -1,6 +1,6 @@
 let KeyAelement = document.getElementById("key-A")
 
-let KeySelement =  document.getElementById("key-S")
+let KeySelement = document.getElementById("key-S")
 
 let KeyDelement = document.getElementById("key-D")
 
@@ -32,3 +32,17 @@ KeyDelement.onclick = () => {
 }
 
 
+window.onkeydown = (event) => {
+    console.log ("Key Pressed")
+    if (event.key == "a"){
+        audioAelement.play()  
+        
+    } else if (event.key == "s") {
+        audioSelement.play()
+    } else if (event.key == "d"){
+        audioDelement.play()
+    }
+        
+    
+    
+}
